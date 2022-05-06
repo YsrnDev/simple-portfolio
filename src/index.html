@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <link rel="shortcut icon" href="https://source.unsplash.com/24x24?people">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="font-poppins select-none dark:bg-gradient-to-b from-slate-900 to-slate-700">
+    <div class="cursor-pointer absolute top-2 right-2 z-50 text-blue-500 text-xl transition duration-300">
+        <i id="moon" class="ri-moon-line"></i>
+        <i id="sun" class="hidden ri-sun-line dark:text-blue-500 dark:transition dark:duration-300"></i>
+    </div>
+
+
+    <!-- Profile -->
+    <header class="container relative pt-14">
+        <div class="flex flex-col gap-y-10">
+            <div class="grid text-center ">
+                <div class="profile__border flex justify-center mb-3">
+                    <div class="w-20 md:w-40 border-[3.5px] border-blue-500 rounded-full p-[1px]">
+                        <img src="./img/yusron.png" alt="Profile" class="rounded-full w-full">
+                    </div>
+                </div>
+                <h2 class="profile__name font-bold text-2xl dark:text-white">Ahmad Yusron</h2>
+                <h3 class="profile__profession font-semibold text-xs mb-4 dark:text-white">Web Developer</h3>
+                <ul class="profile__social flex justify-center gap-3">
+                    <a href="https://instagram.com/_yusron11" target="_blank"
+                        class="text-xl hover:text-blue-500 transition duration-300 dark:text-white dark:hover:text-blue-500">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmad-yusron-1599781a0/" target="_blank"
+                        class="text-xl hover:text-blue-500 transition duration-300 dark:text-white dark:hover:text-blue-500">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/ysrndev" target="_blank"
+                        class="text-xl hover:text-blue-500 transition duration-300 dark:text-white dark:hover:text-blue-500">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="flex justify-center gap-x-10 text-center dark:text-white">
+                <div class="profile__info-group">
+                    <h3 class="text-base font-semibold mb-1">7</h3>
+                    <p class="text-sm font-medium">Years of <br> work</p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="text-base font-semibold mb-1">+124</h3>
+                    <p class="text-sm font-medium">Completed <br> projects</p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="text-base font-semibold mb-1">96</h3>
+                    <p class="text-sm font-medium">Satisfied <br> customers</p>
+                </div>
+            </div>
+
+            <div class="profile__buttons flex justify-center items-center gap-x-4">
+                <a download="" href="pdf/cv.jpg"
+                    class="inline-flex items-center gap-x-2 text-white bg-blue-500 hover:bg-blue-600 px-6 py-4 rounded-lg transition duration-300 shadow-lg">
+                    Download CV
+                    <i class="ri-download-line"></i>
+                </a>
+
+                <div class="flex gap-x-1">
+                    <a href="https://wa.me/6285717885904" target="_blank"
+                        class="inline-flex items-center gap-x-2 py-3 px-4 rounded-lg transition duration-300 shadow-none text-xl bg-gray-300 text-slate-900 hover:bg-gray-400">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                    <a href="https://www.facebook.com/yusround" target="_blank"
+                        class="inline-flex items-center gap-x-2 py-3 px-4 rounded-lg transition duration-300 shadow-none text-xl bg-gray-300 text-slate-900 hover:bg-gray-400">
+                        <i class="ri-messenger-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of Profile -->
+
+
+    <!-- Main -->
+    <section class="filters">
+        <div class="container">
+            <ul
+                class="filters__content mt-8 mb-10 bg-gray-300 p-2 rounded-xl flex justify-between gap-x-2 md:max-w-xl md:mx-auto">
+                <button id="btnProjects"
+                    class="w-full p-4 rounded-xl hover:bg-slate-100 transition duration-300 text-sm font-medium bg-slate-100">
+                    Projects
+                </button>
+                <button id="btnSkills"
+                    class="w-full p-4 rounded-xl hover:bg-slate-100 transition duration-300 text-sm font-medium">
+                    Skills
+                </button>
+            </ul>
+            <div>
+
+                <!-- Projects -->
+                <div id="projects" class="block">
+                    <div class="md:p-10 md:grid md:grid-cols-2 md:gap-x-10">
+                        <article class="relative rounded-2xl overflow-hidden my-4 group">
+                            <img src="https://source.unsplash.com/1080x720?payment" alt="project 1" class="w-full">
+                            <div
+                                class="absolute -bottom-60 group-hover:bottom-0 md:-bottom-[30rem] md:pt-[22rem] left-0 pt-32 pl-4 w-full h-full transition-all duration-300 bg-slate-900 bg-opacity-30 backdrop-blur-sm">
+                                <div class="space-y-1 text-white">
+                                    <span class="text-xs font-semibold">Web</span>
+                                    <h3 class="text-sm font-medium">Payment Site</h3>
+                                    <a href="#"
+                                        class="inline-flex items-center text-white bg-blue-500 hover:bg-blue-600 px-3 py-1 rounded-lg transition duration-300 shadow-lg text-xl"><i
+                                            class="ri-link"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="relative rounded-2xl overflow-hidden my-4 group">
+                            <img src="https://source.unsplash.com/1080x720?portfolio+website" alt="project 2"
+                                class="w-full">
+                            <div
+                                class="absolute -bottom-60 group-hover:bottom-0 md:-bottom-[30rem] md:pt-[22rem] left-0 pt-32 pl-4 w-full h-full transition-all duration-300 bg-slate-900 bg-opacity-30 backdrop-blur-sm">
+                                <div class="space-y-1 text-white">
+                                    <span class="text-xs font-semibold">Web</span>
+                                    <h3 class="text-sm font-medium">Portfolio</h3>
+                                    <a href="#"
+                                        class="inline-flex items-center text-white bg-blue-500 hover:bg-blue-600 px-3 py-1 rounded-lg transition duration-300 shadow-lg text-xl"><i
+                                            class="ri-link"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="relative rounded-2xl overflow-hidden my-4 group">
+                            <img src="https://source.unsplash.com/1080x720?coffe" alt="project 3" class="w-full">
+                            <div
+                                class="absolute -bottom-60 group-hover:bottom-0 md:-bottom-[30rem] md:pt-[22rem] left-0 pt-32 pl-4 w-full h-full transition-all duration-300 bg-slate-900 bg-opacity-30 backdrop-blur-sm">
+                                <div class="space-y-1 text-white">
+                                    <span class="text-xs font-semibold">Design</span>
+                                    <h3 class="text-sm font-medium">Coffe app design</h3>
+                                    <a href="#"
+                                        class="inline-flex items-center text-white bg-blue-500 hover:bg-blue-600 px-3 py-1 rounded-lg transition duration-300 shadow-lg text-xl"><i
+                                            class="ri-link"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="relative rounded-2xl overflow-hidden my-4 group">
+                            <img src="https://source.unsplash.com/1080x720?ecommerce" alt="project 4" class="w-full">
+                            <div
+                                class="absolute -bottom-60 group-hover:bottom-0 md:-bottom-[30rem] md:pt-[22rem] left-0 pt-32 pl-4 w-full h-full transition-all duration-300 bg-slate-900 bg-opacity-30 backdrop-blur-sm">
+                                <div class="space-y-1 text-white">
+                                    <span class="text-xs font-semibold">Web</span>
+                                    <h3 class="text-sm font-medium">E-Commerce</h3>
+                                    <a href="#"
+                                        class="inline-flex items-center text-white bg-blue-500 hover:bg-blue-600 px-3 py-1 rounded-lg transition duration-300 shadow-lg text-xl"><i
+                                            class="ri-link"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="relative rounded-2xl overflow-hidden my-4 group">
+                            <img src="https://source.unsplash.com/1080x720?mobile" alt="project 5" class="w-full">
+                            <div
+                                class="absolute -bottom-60 group-hover:bottom-0 md:-bottom-[30rem] md:pt-[22rem] left-0 pt-32 pl-4 w-full h-full transition-all duration-300 bg-slate-900 bg-opacity-30 backdrop-blur-sm">
+                                <div class="space-y-1 text-white">
+                                    <span class="text-xs font-semibold">Mobile Web</span>
+                                    <h3 class="text-sm font-medium">E-Commerce</h3>
+                                    <a href="#"
+                                        class="inline-flex items-center text-white bg-blue-500 hover:bg-blue-600 px-3 py-1 rounded-lg transition duration-300 shadow-lg text-xl"><i
+                                            class="ri-link"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="relative rounded-2xl overflow-hidden my-4 group">
+                            <img src="https://source.unsplash.com/1080x720?food" alt="project 6" class="w-full">
+                            <div
+                                class="absolute -bottom-60 group-hover:bottom-0 md:-bottom-[30rem] md:pt-[22rem] left-0 pt-32 pl-4 w-full h-full transition-all duration-300 bg-slate-900 bg-opacity-30 backdrop-blur-sm">
+                                <div class="space-y-1 text-white">
+                                    <span class="text-xs font-semibold">Mobile Apps</span>
+                                    <h3 class="text-sm font-medium">Frozen food app</h3>
+                                    <a href="#"
+                                        class="inline-flex items-center text-white bg-blue-500 hover:bg-blue-600 px-3 py-1 rounded-lg transition duration-300 shadow-lg text-xl"><i
+                                            class="ri-link"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div id="skills" class="hidden">
+                    <div class="flex flex-col gap-14 dark:text-white">
+                        <div class="skills area">
+                            <h3 class="font-semibold text-center mb-6">Frontend Developer</h3>
+                            <div class="flex justify-center gap-x-12">
+                                <div class="grid justify-start gap-y-4">
+                                    <div class="flex gap-x-2">
+                                        <i class="ri-checkbox-circle-line text-base text-blue-500"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-sm">HTML</h3>
+                                            <span class="text-sm">Basic</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-x-2">
+                                        <i class="ri-checkbox-circle-line text-base text-blue-500"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-sm">CSS</h3>
+                                            <span class="text-sm">Advanced</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-x-2">
+                                        <i class="ri-checkbox-circle-line text-base text-blue-500"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-sm">Javascript</h3>
+                                            <span class="text-sm">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid justify-start gap-y-4">
+                                    <div class="flex gap-x-2">
+                                        <i class="ri-checkbox-circle-line text-base text-blue-500"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-sm">React JS</h3>
+                                            <span class="text-sm">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-x-2">
+                                        <i class="ri-checkbox-circle-line text-base text-blue-500"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-sm">Bootstrap</h3>
+                                            <span class="text-sm">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-x-2">
+                                        <i class="ri-checkbox-circle-line text-base text-blue-500"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-sm">Git</h3>
+                                            <span class="text-sm">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills area">
+                            <h3 class="font-semibold text-center mb-6">Backend Developer</h3>
+                            <div class="flex justify-center gap-x-12">
+                                <div class="grid justify-start gap-y-4">
+                                    <div class="flex gap-x-2">
+                                        <i class="ri-checkbox-circle-line text-base text-blue-500"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-sm">MySQL</h3>
+                                            <span class="text-sm">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-x-2">
+                                        <i class="ri-checkbox-circle-line text-base text-blue-500"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-sm">MongoDB</h3>
+                                            <span class="text-sm">Advanced</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-x-2">
+                                        <i class="ri-checkbox-circle-line text-base text-blue-500"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-sm">PHP</h3>
+                                            <span class="text-sm">Advanced</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid justify-start gap-y-4">
+                                    <div class="flex gap-x-2">
+                                        <i class="ri-checkbox-circle-line text-base text-blue-500"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-sm">Codeigniter</h3>
+                                            <span class="text-sm">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-x-2">
+                                        <i class="ri-checkbox-circle-line text-base text-blue-500"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-sm">DjangoDB</h3>
+                                            <span class="text-sm">Basic</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-x-2">
+                                        <i class="ri-checkbox-circle-line text-base text-blue-500"></i>
+                                        <div>
+                                            <h3 class="font-semibold text-sm">PostgreSQL</h3>
+                                            <span class="text-sm">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Main -->
+
+    <!-- Footer -->
+    <footer class="w-full mx-auto p-2 my-10 dark:text-white">
+        <div class="container text-center text-sm">
+            &#169; 2022 Ahmad Yusron. All Rights Reserved.
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
